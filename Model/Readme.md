@@ -1,2 +1,5 @@
-Download yolov3 weight from the link:  https://pjreddie.com/media/files/yolov3.weights 
-and save it as yolov3.weights into this directory only...
+Download the yolov3 model from the below link :
+
+https://pjreddie.com/media/files/yolov3.weights
+
+and save it inside the Model directory.
