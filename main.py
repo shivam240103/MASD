@@ -6,8 +6,8 @@ def play():
 def send_mail_function(ImgFileName):
     img_data = open(ImgFileName, 'rb').read()
     msg = MIMEMultipart()
-    sender = 'sender@gmail.com'   #MAIL ID 
-    recipient = "recipient@gmail.com" #MAIL ID 
+    sender = 'sender@gmail.com'            # ENTER SENDER'S MAIL ID 
+    recipient = "recipient@gmail.com"      # ENTER RECIPIENT'S MAIL ID 
     recipient = recipient.lower()
     msg['Subject'] = 'Violation'
     msg['From'] = sender
@@ -20,7 +20,7 @@ def send_mail_function(ImgFileName):
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login(sender, 'password')   #PASSWORD
+    server.login(sender, 'password')         #ENTER PASSWORD OF SENDERS'S MAIL ID
     server.sendmail(sender, recipient, msg.as_string())
     print('sent to {}'.format(recipient))
     server.quit()
